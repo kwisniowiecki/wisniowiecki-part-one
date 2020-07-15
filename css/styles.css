@@ -1,0 +1,164 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+header {
+  background-color: #F2F2F2;
+  display: flexbox;
+  flex-direction: column;
+  font-family: "Roboto";
+  padding-bottom: 20px;
+  padding-right: 40px;
+}
+
+.textColor {
+color: #ff5c0f;
+}
+
+h1 {
+  display: flexbox;
+  font-family: "Roboto";
+  color: #20a8b4;
+  padding: 0;
+  margin-bottom: 0;
+  margin-left: 20px;
+}
+
+  span {
+    white-space: pre-wrap;
+  }
+
+ ul {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    text-decoration: none;
+    margin-top: 0;
+    padding: 0;
+}
+
+li {
+  list-style-type: none;
+  text-decoration: none;
+  font-family: "Roboto";
+  margin-top: 10px;
+  padding-left: 0;
+  margin-left: 20px;
+}
+
+li a {
+  color:#000;
+  transition: 0.5s all;
+}
+
+li a:link {
+  text-decoration: none;
+  color: none;
+}
+
+li a:hover {
+  color: #ff5c0f;
+}
+
+.button {
+  display: block;
+  margin-left: 20px;
+  color: #fff;
+  text-decoration: none;
+  align-items: center;
+  text-align: center;
+  background-color: #20a8b4;
+  padding: 12px;
+  position: relative;
+  border-radius: 10px;
+  font-family: "Roboto";
+  width: 95%;
+  box-sizing: border-box;
+}
+
+.button:link {
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: #ff5c0f;
+}
+
+.image {
+  display: none;
+  width: 40%;
+}
+
+.button-container-div {
+  width: 400px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button:hover {
+  background-color: #ff5c0f;
+}
+
+button {
+  color: white;
+  font-family: Roboto;
+  font-size: 16px;
+  background-color: #20a8b4;
+  border-radius: 6px;
+  border-width: 0px;
+  text-align: center;
+  height: 38px;
+  width: 400px;
+}
+
+h2 {
+  font-size: 22px;
+  font-family: Roboto;
+  padding-left: 15px;
+}
+
+p {
+  font-family: Roboto;
+  padding-left: 15px;
+}
+
+/*When*/
+
+@media only screen and (min-width: 768px) {
+
+
+  header {
+    background-color: #F2F2F2;
+    display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items: baseline;
+  }
+
+  h1 {
+      font-size: 30px;
+      order: 0;
+      flex-grow: 2;
+  }
+
+  ul {
+      display: flex;
+      flex-direction: row;
+      align-self: baseline;
+      flex-wrap: nowrap;
+  }
+
+  li {
+      display: flex;
+      flex-direction: row;
+      align-self: baseline;
+      flex-wrap: nowrap;
+  }
+  .button {
+      width: auto;
+      display: flex;
+  }
+  
