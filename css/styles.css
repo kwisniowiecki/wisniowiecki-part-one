@@ -61,30 +61,6 @@ li a:hover {
   color: #ff5c0f;
 }
 
-.button {
-  display: block;
-  margin-left: 20px;
-  color: #fff;
-  text-decoration: none;
-  align-items: center;
-  text-align: center;
-  background-color: #20a8b4;
-  padding: 12px;
-  position: relative;
-  border-radius: 10px;
-  font-family: "Roboto";
-  width: 95%;
-  box-sizing: border-box;
-}
-
-.button:link {
-  text-decoration: none;
-}
-
-.button:hover {
-  background-color: #ff5c0f;
-}
-
 .image {
   display: none;
   width: 40%;
@@ -125,7 +101,7 @@ p {
   padding-left: 15px;
 }
 
-/*When*/
+/*Desktop Display*/
 
 @media only screen and (min-width: 768px) {
 
@@ -136,6 +112,12 @@ p {
       flex-direction: row;
       flex-wrap: nowrap;
       align-items: baseline;
+  }
+
+  nav {
+    display: flex;
+    align-items: baseline;
+    background-color: #f2f2f2;
   }
 
   h1 {
@@ -157,8 +139,12 @@ p {
       align-self: baseline;
       flex-wrap: nowrap;
   }
-  .button {
+  button {
       width: auto;
       display: flex;
   }
-  
+
+  .image{
+    display: block;
+  }
+}
